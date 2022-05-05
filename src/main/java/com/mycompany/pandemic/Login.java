@@ -87,7 +87,7 @@ public class Login extends javax.swing.JPanel {
         setVerifyInputWhenFocusTarget(false);
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
         jButton9.setBorder(null);
         jButton9.setContentAreaFilled(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -97,10 +97,10 @@ public class Login extends javax.swing.JPanel {
         });
         add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 540, -1, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panel_errorUsuario.png")); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_errorUsuario.png")); // NOI18N
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
 
-        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
         jButton8.setBorder(null);
         jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -110,10 +110,10 @@ public class Login extends javax.swing.JPanel {
         });
         add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 540, -1, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panel_errorContraseñas.png")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_errorContraseñas.png")); // NOI18N
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
 
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
         jButton7.setBorder(null);
         jButton7.setContentAreaFilled(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -123,10 +123,10 @@ public class Login extends javax.swing.JPanel {
         });
         add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 540, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panel_error.png")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_error.png")); // NOI18N
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
         jButton6.setBorder(null);
         jButton6.setContentAreaFilled(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -136,10 +136,10 @@ public class Login extends javax.swing.JPanel {
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 540, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panel_registrado.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_registrado.png")); // NOI18N
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
 
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_registrar.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_registrar.png")); // NOI18N
         jButton5.setBorder(null);
         jButton5.setContentAreaFilled(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +154,7 @@ public class Login extends javax.swing.JPanel {
         jLabel7.setText("¿Crear cuenta?");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 430, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_enviar.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_enviar.png")); // NOI18N
         jButton1.setBorder(null);
         jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -199,10 +199,10 @@ public class Login extends javax.swing.JPanel {
         });
         add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 390, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panel_login2.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_login2.png")); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_enviar.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_enviar.png")); // NOI18N
         jButton3.setBorder(null);
         jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +217,7 @@ public class Login extends javax.swing.JPanel {
         jLabel6.setText("¿Tienes una cuenta?");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, -1, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_registrar.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_registrar.png")); // NOI18N
         jButton2.setBorder(null);
         jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -307,13 +307,13 @@ public class Login extends javax.swing.JPanel {
         });
         add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 210, 50));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panel_registro.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_registro.png")); // NOI18N
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\fondo_login.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\fondo_login.png")); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\Intro.gif")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\Intro.gif")); // NOI18N
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -130, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

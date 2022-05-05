@@ -77,7 +77,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         });
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\marcoRanking.png")); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\marcoRanking.png")); // NOI18N
         add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Chakra Petch Light", 3, 24)); // NOI18N
@@ -140,7 +140,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         jLabel13.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 570, -1, 30));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_ranking.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_ranking.png")); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -158,7 +158,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, -1, -1));
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_autor.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_autor.png")); // NOI18N
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
@@ -178,7 +178,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_jugar.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_jugar.png")); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -197,7 +197,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, -1, -1));
 
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_reglas.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_reglas.png")); // NOI18N
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -215,7 +215,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         });
         add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_salir.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_salir.png")); // NOI18N
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -233,10 +233,10 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         });
         add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\marcoReglas.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\marcoReglas.png")); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\marco.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\marco.png")); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Documents\\GitHub\\Pandemic\\src\\main\\java\\Assets\\backgroundTmp.png")); // NOI18N
