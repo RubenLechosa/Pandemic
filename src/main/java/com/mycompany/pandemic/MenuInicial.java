@@ -239,7 +239,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         jLabel2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\marco.png")); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Documents\\GitHub\\Pandemic\\src\\main\\java\\Assets\\backgroundTmp.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\backgroundTmp.png")); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel1MouseEntered(evt);
