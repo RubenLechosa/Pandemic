@@ -28,12 +28,18 @@ public class Partida {
     public static ArrayList<Enfermedad> listaEnfermedades= new ArrayList<Enfermedad>();
     public static Turno turno;
     public static Tienda tienda;
+    public static int puntos;
+    public static int jugador_username = 0;
+    public static int jugador_puntos = 0;
+    
+    public static ArrayList<String> console_log = new ArrayList<String>();
     
     public Partida(int idJugador, int dificultad) throws IOException{
         this.idJugador = idJugador;
         this.enfermedadesActivas = 0;
         this.resultado = false;
         this.dificultad = dificultad;
+        this.puntos = 0;
         
         tienda = new Tienda();
         turno = new Turno();
@@ -45,6 +51,7 @@ public class Partida {
         turno.todasciudades = Partida.ciudadList;
         turno.primerTurno();
         Vacunas.crearVacunas();
+        
     }	
 
     //Metodos
@@ -59,13 +66,15 @@ public class Partida {
     public boolean haPerdido(){
         if(turno.getBrotesTotales() > getBrotesActivosDerrota()){
             System.out.println("El jugador ha perdido porque ha superado los "+getBrotesActivosDerrota()+" brotes totales.");
+            this.setPuntos(this.getPuntos()+5);
             return true;
         }
         
         for (Integer colorActivo : turno.contarColoresActivos().values()) {
 			if(colorActivo >= getEnfermedadesActivas()) {
 				System.out.println("El jugador ha perdido porque ha superado los colores de enfermedades.");
-	            return true;
+                                //this.setPuntos(this.getPuntos()+5);
+                                return true;
 			}
 		}
 
@@ -81,6 +90,14 @@ public class Partida {
 		}
 		
 		if(contador == 4) {
+                    
+                    if(this.getDificultad() == 0){
+                        this.setPuntos(this.getPuntos()+20);
+                    }else if(this.getDificultad() == 1){
+                        this.setPuntos(this.getPuntos()+30);
+                    }else{
+                        this.setPuntos(this.getPuntos()+40);
+                    }
 			return true;
 		}
 		
@@ -123,8 +140,36 @@ public class Partida {
     	brotesActivosDerrota = Integer.parseInt(parametros.get(3));
     	numVecesInvestigar = Integer.parseInt(parametros.get(4));
     }
+    
+    public static void Add_ConsoleLog(String log){
+        console_log.add(log);
+        
+        while(console_log.size() >  Partida.cuidadesInfectadasRonda + 2){
+            console_log.remove(0);
+        }
+    }
 
     // Getters y Setters
+    public ArrayList<String> getConsoleLog(){
+        return console_log;
+    }
+    
+    public static void setPlayerId(int jogador_user){
+        jugador_username = jogador_user;
+    }
+
+    public static int getPlayerId(){
+        return jugador_username;
+    }
+
+    public static  void setPlayerPoints(int jogador_puntos){
+        jugador_puntos = jogador_puntos;
+    }
+
+    public static  int getPlayerPoints(){
+        return jugador_puntos;
+    }
+
     public void setIdJugador(int idJugador){
         this.idJugador = idJugador;
     }
@@ -187,6 +232,14 @@ public class Partida {
 
     public int getBrotesActivosDerrota(){
         return brotesActivosDerrota;
+    }
+    
+    public void setPuntos(int puntos){
+        this.puntos = puntos;
+    }
+
+    public int getPuntos(){
+        return puntos;
     }
     
     public static void setCiudades(ArrayList<Ciudad> ciudadesList) {  	

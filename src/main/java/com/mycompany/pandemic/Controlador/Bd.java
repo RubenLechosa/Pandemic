@@ -18,7 +18,7 @@ public class Bd {
 		//selectWithStatement(connection);
 		//register(connection, "Alex", "Mandrigal", "alex@duki.com", "mandingo");
 		//ranking(connection);
-		sumarPuntos(connection, 1, 5);
+		
 	}
 	
 public static Connection makeConnection() {
@@ -113,13 +113,14 @@ public static Connection makeConnection() {
 		    while (search)
 		    {
 		    	if(rs.next()) {
-			    	int id = rs.getInt("user_id");
-			        String nombre = rs.getString("user_name");
-			        int puntuacion = rs.getInt("user_points");
-
-			        System.out.println("Id: " + id + " Nombre: " + nombre + " Puntos Totales: " + puntuacion);
-		    		search = false;
-					return true;
+			    	/// BD
+                                int puntos = rs.getInt("user_points");
+                                int user_id = rs.getInt("user_id");
+                                Partida.setPlayerId(user_id);
+                                Partida.setPlayerPoints(puntos);
+                                System.out.println(Partida.getPlayerPoints());
+                                search = false;
+                                return true;
 		    	} else {
 		    		System.out.println("Usuario incorrecto");  
 		    		search = false;
@@ -193,8 +194,8 @@ public static Connection makeConnection() {
 		return ranking;
 	}
 
-	public static void sumarPuntos(Connection con, int user_id, int puntosSumar) {
-		
+	public static void sumarPuntos(int user_id, int puntosSumar) {
+		Connection con = makeConnection();
 		String sql = "SELECT * FROM users WHERE user_id = "+user_id+"";
 
 		Statement st = null;

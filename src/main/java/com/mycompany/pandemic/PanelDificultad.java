@@ -230,7 +230,7 @@ public class PanelDificultad extends javax.swing.JPanel implements ActionListene
 
         JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
             marco.remove(this);
-            marco.add(new MenuInicial());
+            marco.add(new PanelNuevaPartida());
             marco.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 

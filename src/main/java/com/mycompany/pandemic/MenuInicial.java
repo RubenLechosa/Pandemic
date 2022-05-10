@@ -275,6 +275,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
         // Boton Ranking
         if(marcoRanking){
             jLabel14.setVisible(false);
+            jLabel4.setVisible(false);
             marcoRanking = false;  
         }else{
            HashMap<Integer, HashMap<String, String>> ranking = Bd.ranking();
@@ -296,9 +297,40 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
            
             marcoRanking = true; 
         }
+        jLabel2.setVisible(false);
         
-        
-        
+        if(marcoAutores) {
+            marcoAutores = false;
+            jLabel2.setVisible(false);
+            jLabel3.setVisible(true);
+        jLabel3.setVisible(false);
+        jLabel5.setVisible(false);
+        jLabel6.setVisible(false);
+        jLabel7.setVisible(false);
+        jLabel8.setVisible(false);
+        jLabel9.setVisible(false);
+        jLabel10.setVisible(false);
+        jLabel11.setVisible(false);
+        jLabel12.setVisible(false);
+        jLabel13.setVisible(false);
+            
+    	} else {
+            
+            marcoAutores = true;
+            jLabel2.setVisible(true);
+                    
+          jLabel3.setVisible(false);
+        jLabel5.setVisible(false);
+        jLabel6.setVisible(false);
+        jLabel7.setVisible(false);
+        jLabel8.setVisible(false);
+        jLabel9.setVisible(false);
+        jLabel10.setVisible(false);
+        jLabel11.setVisible(false);
+        jLabel12.setVisible(false);
+        jLabel13.setVisible(false);
+            
+    	}
         
         
  
@@ -322,44 +354,39 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
     }//GEN-LAST:event_jButton3MouseExited
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        
-        if(marcoRanking){
-            marcoRanking = false;  
-            jLabel14.setVisible(false);
-            jLabel3.setVisible(true);
-            
-        }
-        
-        if(marcoReglas) {
-            marcoReglas = false;
+        // Boton autores    
+        jLabel14.setVisible(false);
+        jLabel4.setVisible(false);
+
+        if(marcoAutores) {
+            marcoAutores = false;
             jLabel2.setVisible(false);
             jLabel3.setVisible(true);
-        jLabel3.setVisible(false);
-        jLabel5.setVisible(false);
-        jLabel6.setVisible(false);
-        jLabel7.setVisible(false);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(false);
-        jLabel10.setVisible(false);
-        jLabel11.setVisible(false);
-        jLabel12.setVisible(false);
-        jLabel13.setVisible(false);
-            
+            jLabel3.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            jLabel7.setVisible(false);
+            jLabel8.setVisible(false);
+            jLabel9.setVisible(false);
+            jLabel10.setVisible(false);
+            jLabel11.setVisible(false);
+            jLabel12.setVisible(false);
+            jLabel13.setVisible(false);  
     	} else {
             
-            marcoReglas = true;
+            marcoAutores = true;
             jLabel2.setVisible(true);
                     
-          jLabel3.setVisible(false);
-        jLabel5.setVisible(false);
-        jLabel6.setVisible(false);
-        jLabel7.setVisible(false);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(false);
-        jLabel10.setVisible(false);
-        jLabel11.setVisible(false);
-        jLabel12.setVisible(false);
-        jLabel13.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            jLabel7.setVisible(false);
+            jLabel8.setVisible(false);
+            jLabel9.setVisible(false);
+            jLabel10.setVisible(false);
+            jLabel11.setVisible(false);
+            jLabel12.setVisible(false);
+            jLabel13.setVisible(false);
             
     	}
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -373,54 +400,66 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
     }//GEN-LAST:event_jLabel1MouseExited
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        
-        if(marcoReglas){
+        System.out.println(marcoReglas);
+        if(!marcoReglas){
+            marcoReglas = true;
+            marcoAutores = false;
             jLabel2.setVisible(false);
-            marcoReglas = false;
-               jLabel3.setVisible(true);
-        jLabel3.setVisible(false);
-        jLabel5.setVisible(false);
-        jLabel6.setVisible(false);
-        jLabel7.setVisible(false);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(false);
-        jLabel10.setVisible(false);
-        jLabel11.setVisible(false);
-        jLabel12.setVisible(false);
-        jLabel13.setVisible(false);
-            
+            jLabel3.setVisible(true);
+            jLabel3.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            jLabel7.setVisible(false);
+            jLabel8.setVisible(false);
+            jLabel9.setVisible(false);
+            jLabel10.setVisible(false);
+            jLabel11.setVisible(false);
+            jLabel12.setVisible(false);
+            jLabel13.setVisible(false);
+        } else {
+            jLabel2.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            jLabel7.setVisible(false);
+            jLabel8.setVisible(false);
+            jLabel9.setVisible(false);
+            jLabel10.setVisible(false);
+            jLabel11.setVisible(false);
+            jLabel12.setVisible(false);
+            jLabel13.setVisible(false);
+            marcoReglas = true;
         }
         
         if(marcoAutores) {
             marcoAutores = false;
             jLabel4.setVisible(false);
-            
             jLabel3.setVisible(false);
-        jLabel5.setVisible(false);
-        jLabel6.setVisible(false);
-        jLabel7.setVisible(false);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(false);
-        jLabel10.setVisible(false);
-        jLabel11.setVisible(false);
-        jLabel12.setVisible(false);
-        jLabel13.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            jLabel7.setVisible(false);
+            jLabel8.setVisible(false);
+            jLabel9.setVisible(false);
+            jLabel10.setVisible(false);
+            jLabel11.setVisible(false);
+            jLabel12.setVisible(false);
+            jLabel13.setVisible(false);
             
     	} else {
-            
-            marcoAutores = true;
+            marcoAutores = false;
             jLabel4.setVisible(true);
-            
+
             jLabel3.setVisible(true);
-        jLabel5.setVisible(true);
-        jLabel6.setVisible(true);
-        jLabel7.setVisible(true);
-        jLabel8.setVisible(true);
-        jLabel9.setVisible(true);
-        jLabel10.setVisible(true);
-        jLabel11.setVisible(true);
-        jLabel12.setVisible(true);
-        jLabel13.setVisible(true);
+            jLabel5.setVisible(true);
+            jLabel6.setVisible(true);
+            jLabel7.setVisible(true);
+            jLabel8.setVisible(true);
+            jLabel9.setVisible(true);
+            jLabel10.setVisible(true);
+            jLabel11.setVisible(true);
+            jLabel12.setVisible(true);
+            jLabel13.setVisible(true);
             
     	}
     }//GEN-LAST:event_jButton5ActionPerformed

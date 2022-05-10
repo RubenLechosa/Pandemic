@@ -71,7 +71,9 @@ public class Turno extends JLabel {
 		todasciudades = Partida.getCiudades();
 		int numero = 0;
 		Random aleatorio = new Random();
-			
+                
+		Partida.Add_ConsoleLog("Ciudades Infectadas:");
+                Partida.Add_ConsoleLog("Ciudades Infectadas:");
 		for (int j = 0; j < Partida.cuidadesInfectadasRonda; j++) {
 			do {
 				numero = aleatorio.nextInt(todasciudades.size());
@@ -115,6 +117,7 @@ public class Turno extends JLabel {
 				enfermedadesCiudad.get(todasciudades.get(numero).getColorCiudad()).setNivelInfeccion(1);
 			}
 			
+                        Partida.Add_ConsoleLog(todasciudades.get(numero).getNombreCiudad());
 			this.ciudadesInfectadasTurno.add(todasciudades.get(numero).getNombreCiudad());
 		}
 	}

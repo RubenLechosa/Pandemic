@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.FileWriter;
+import javax.xml.XMLConstants;
 import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
@@ -61,63 +62,50 @@ public abstract class Archivos {
     }
     
     public static ArrayList<String> readXML(String xml) {
-        String role1 = null;
-        String role2 = null;
-        String role3 = null;
-        String role4 = null;
-        String role5 = null;
-        ArrayList<String> rolev;
-        
-        rolev = new ArrayList<String>();
-        Document dom;
-        // Make an  instance of the DocumentBuilderFactory
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        try {
-            // use the factory to take an instance of the document builder
-            DocumentBuilder db = dbf.newDocumentBuilder();
-            db.reset();
-            // parse using the builder to get the DOM mapping of the    
-            // XML file
-            dom = db.parse(xml);
+        ArrayList<String> rolev = new ArrayList<String>();
+      try {
 
-            Element doc = dom.getDocumentElement();
+          // optional, but recommended
+          // process XML securely, avoid attacks like XML External Entities (XXE)
+          dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
 
-            role1 = getTextValue(role1, doc, "numCiudadesInfectadasInicio");
-            if (role1 != null) {
-                if (!role1.isEmpty())
-                    rolev.add(role1);
-            }
-            role2 = getTextValue(role2, doc, "numCuidadesInfectadasRonda");
-            if (role2 != null) {
-                if (!role2.isEmpty())
-                    rolev.add(role2);
-            }
-            role3 = getTextValue(role3, doc, "numEnfermedadesActivasDerrota");
-            if (role3 != null) {
-                if (!role3.isEmpty())
-                    rolev.add(role3);
-            }
-            role4 = getTextValue(role4, doc, "numBrotesDerrota");
-            if ( role4 != null) {
-                if (!role4.isEmpty())
-                    rolev.add(role4);
-            }
-            
-            role5 = getTextValue(role5, doc, "numVecesInvestigar");
-            if ( role5 != null) {
-                if (!role5.isEmpty())
-                    rolev.add(role5);
-            }
+          // parse XML file
+          DocumentBuilder db = dbf.newDocumentBuilder();
 
-        } catch (ParserConfigurationException pce) {
-            System.out.println(pce.getMessage());
-        } catch (SAXException se) {
-            System.out.println(se.getMessage());
-        } catch (IOException ioe) {
-            System.err.println(ioe.getMessage());
-        }
-        
-        return rolev;
+          Document doc = db.parse(new File(xml));
+
+          doc.getDocumentElement().normalize();
+
+
+          // get <staff>
+          NodeList list = doc.getElementsByTagName("parametros");
+
+          for (int temp = 0; temp < list.getLength(); temp++) {
+
+              Node node = list.item(temp);
+
+              if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                  Element element = (Element) node;
+
+                  // get staff's attribute
+                  String id = element.getAttribute("id");
+
+                  // get text
+                  rolev.add(element.getElementsByTagName("numCiudadesInfectadasInicio").item(0).getTextContent());
+                  rolev.add(element.getElementsByTagName("numCuidadesInfectadasRonda").item(0).getTextContent());
+                  rolev.add(element.getElementsByTagName("numEnfermedadesActivasDerrota").item(0).getTextContent());
+                  rolev.add(element.getElementsByTagName("numBrotesDerrota").item(0).getTextContent());
+                  rolev.add(element.getElementsByTagName("numVecesInvestigar").item(0).getTextContent());
+              }
+          }
+
+      } catch (ParserConfigurationException | SAXException | IOException e) {
+          e.printStackTrace();
+      }
+      
+      return rolev;
     }
     
     private static String getTextValue(String def, Element doc, String tag) {
