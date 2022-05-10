@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 
 public class Marco extends javax.swing.JFrame {
 
-    MenuInicial lamina1;
+    Login lamina1;
 
     public Marco() {
         
@@ -21,7 +21,7 @@ public class Marco extends javax.swing.JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // fin del programa al pulsar la X
         setTitle("PANDEMIC");
 
-        lamina1 = new MenuInicial();
+        lamina1 = new Login();
 
         add(lamina1);
         setVisible(true);

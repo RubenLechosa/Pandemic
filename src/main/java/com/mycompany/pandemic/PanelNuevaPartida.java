@@ -98,7 +98,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         jLabel8.setText("Partida 3");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 230, 300, -1));
 
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
         jButton7.setBorder(null);
         jButton7.setBorderPainted(false);
         jButton7.setContentAreaFilled(false);
@@ -119,7 +119,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         });
         jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1570, 160, -1, -1));
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
@@ -155,7 +155,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         jLabel5.setText("Partida 1");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 260, -1));
 
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
@@ -176,7 +176,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         });
         jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 160, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_nuevaP.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png")); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setFocusPainted(false);
@@ -196,7 +196,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 520, -1, -1));
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_nuevaP.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png")); // NOI18N
         jButton3.setBorder(null);
         jButton3.setFocusPainted(false);
         jButton3.setFocusable(false);
@@ -215,7 +215,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 520, -1, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_cargarP.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_cargarP.png")); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setFocusPainted(false);
@@ -235,16 +235,16 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1267, 139, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 139, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 139, -1, -1));
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_atras.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_atras.png")); // NOI18N
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.setFocusPainted(false);

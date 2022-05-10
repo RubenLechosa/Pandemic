@@ -27,7 +27,7 @@ public class Vacunas {
                 TodasVacunas.clear();
                 
 		for (HashMap<String, String> enfermedad : listEnfermedades.values()) {
-			Vacunas vacuna = new Vacunas(0, false, enfermedad.get("colorEnfermedad"));
+			Vacunas vacuna = new Vacunas(0, true, enfermedad.get("colorEnfermedad"));
 			TodasVacunas.add(vacuna);
 
 		}
