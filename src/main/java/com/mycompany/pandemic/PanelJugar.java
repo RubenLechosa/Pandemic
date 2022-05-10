@@ -818,9 +818,9 @@ public class PanelJugar extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-            if(marcoOpciones) {
-            marcoOpciones = false;
-            jLabel5.setVisible(true);
+
+            marcoOpciones = true;
+                        jLabel5.setVisible(true);
             jButton7.setVisible(true);
             jButton12.setVisible(true);
             jButton11.setVisible(true);
@@ -830,17 +830,33 @@ public class PanelJugar extends javax.swing.JPanel {
             jButton3.setVisible(false);
             jButton4.setVisible(false);
             
+            jButton13.setVisible(false);
+            jButton14.setVisible(false);
+            jButton15.setVisible(false);
+            jButton16.setVisible(false);
+            jButton10.setVisible(false);
+            jButton18.setVisible(false);
+            jButton19.setVisible(false);
+            jButton20.setVisible(false);
+            jButton21.setVisible(false);
+            jButton17.setVisible(false);
+            jButton5.setVisible(false);
+            jButton8.setVisible(false);
+            jButton9.setVisible(false);
+            marcoAcciones = false;
             
-    	} else if (marcoOpciones == false) {
-            marcoOpciones = true;
-            jLabel5.setVisible(false); 
-            jButton1.setVisible(true);
-            jButton2.setVisible(true);
-            jButton3.setVisible(true);
-            jButton4.setVisible(true);
-            jButton6.setVisible(true);
+            jLabel7.setVisible(false);
+            jLabel8.setVisible(false);
+            jLabel9.setVisible(false);
+            jLabel10.setVisible(false);
+            jLabel6.setVisible(false);
+            jLabel11.setVisible(false);
+            jLabel12.setVisible(false);
+            jLabel13.setVisible(false);
             
-    	}
+            marcoProgreso = false;
+            
+    	
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseEntered
@@ -852,32 +868,29 @@ public class PanelJugar extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton7MouseExited
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        if(marcoOpciones) {
-            marcoOpciones = false;
-            jLabel5.setVisible(true);
-            jButton7.setVisible(true);
-            jButton12.setVisible(true);
-            jButton11.setVisible(true);
-            jButton6.setVisible(false);
-            jButton1.setVisible(false);
-            jButton2.setVisible(false);
-            jButton3.setVisible(false);
-            jButton4.setVisible(false);
-            
-            
-    	} else if (marcoOpciones == false) {
-            marcoOpciones = true;
-            jLabel5.setVisible(false); 
+            jLabel5.setVisible(false);
             jButton7.setVisible(false);
             jButton12.setVisible(false);
             jButton11.setVisible(false);
+            jButton6.setVisible(true);
             jButton1.setVisible(true);
             jButton2.setVisible(true);
             jButton3.setVisible(true);
             jButton4.setVisible(true);
-            jButton6.setVisible(true);
             
-    	}
+            jButton13.setVisible(false);
+            jButton14.setVisible(false);
+            jButton15.setVisible(false);
+            jButton16.setVisible(false);
+            jButton10.setVisible(false);
+            jButton18.setVisible(false);
+            jButton19.setVisible(false);
+            jButton20.setVisible(false);
+            jButton21.setVisible(false);
+            jButton17.setVisible(false);
+            jButton5.setVisible(false);
+            
+            marcoOpciones = true;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseEntered
