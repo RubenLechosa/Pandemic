@@ -128,7 +128,8 @@ public class Turno extends JLabel {
 					+ " acciones este turno.");
 			return false;
 		} else {
-			for (Vacunas vacuna : Vacunas.TodasVacunas) {
+                        if(enfermedad.getColor().equals(color) && enfermedad.getNivelInfeccion() > 0){
+                            for (Vacunas vacuna : Vacunas.TodasVacunas) {
 				if(vacuna.getVacunaInvestigada() && vacuna.getColorVacuna().equals(color)) {
 					enfermedad.setNivelInfeccion(0);
 					setPuntosTotales(this.getPuntosTotales() - 1);
@@ -137,8 +138,7 @@ public class Turno extends JLabel {
 							"La ciudad ha sido curada con exito!, te quedan " + this.getPuntosTotales() + " acciones este turno.");
 					return true;
 				}
-			}
-                        if(enfermedad.getColor().equals(color) && enfermedad.getNivelInfeccion() > 0){
+                            }
                             setPuntosTotales(this.getPuntosTotales() - 1);
                             enfermedad.setNivelInfeccion(enfermedad.getNivelInfeccion() - 1);
 
