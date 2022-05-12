@@ -158,7 +158,6 @@ public class Turno extends JLabel {
 					+ " acciones este turno.");
 			return false;
 		} else {
-			this.setPuntosTotales(this.getPuntosTotales() - 4);
 			System.out.println("Has investigado vacuna, te quedan " + this.getPuntosTotales() + " acciones este turno.");
 			return true;
 		}

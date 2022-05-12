@@ -35,7 +35,9 @@ public class Vacunas {
 	}
 	
 	public static boolean investigarVacunaColor(int colorId) {
-		if (Partida.turno.investigarVacuna() == true) {
+		if (Partida.turno.investigarVacuna() && Vacunas.TodasVacunas.get(colorId).getPorcentajeVacuna() != 100) {
+                        Partida.turno.setPuntosTotales(Partida.turno.getPuntosTotales() - 4);
+                        System.out.println("Has investigado la vacuna " + colorId);
 			if (Vacunas.TodasVacunas.get(colorId).getPorcentajeVacuna() <= 75) {
 				Vacunas.TodasVacunas.get(colorId)
 						.setPorcentajeVacuna(Vacunas.TodasVacunas.get(colorId).getPorcentajeVacuna() + 25);
@@ -48,14 +50,9 @@ public class Vacunas {
 			}
                         return true;
 		} else {
+                    System.out.println("hola");
                     return false;
                 }
-	}
-
-	public void Vacuna0() {
-
-		TodasVacunas.get(0).setVacunaInvestigada(true);
-		TodasVacunas.get(0).setPorcentajeVacuna(10);
 	}
 
 	public void setPorcentajeVacuna(int porcentajeVacuna) {

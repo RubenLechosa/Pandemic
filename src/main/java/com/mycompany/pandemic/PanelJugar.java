@@ -166,7 +166,7 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel28.setText("Has ganado: 10 puntos.");
         add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, -1, -1));
 
-        jButton7.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_seguir.png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_seguir.png")); // NOI18N
         jButton7.setBorder(null);
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -183,7 +183,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 200, -1, -1));
 
-        jButton11.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_salirpart.png")); // NOI18N
+        jButton11.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_salirpart.png")); // NOI18N
         jButton11.setBorder(null);
         jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -200,7 +200,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 480, -1, -1));
 
-        jButton12.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_guardar.png")); // NOI18N
+        jButton12.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_guardar.png")); // NOI18N
         jButton12.setBorder(null);
         jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -217,7 +217,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 340, -1, -1));
 
-        jButton22.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
+        jButton22.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_continuar.png")); // NOI18N
         jButton22.setBorder(null);
         jButton22.setContentAreaFilled(false);
         jButton22.addActionListener(new java.awt.event.ActionListener() {
@@ -227,13 +227,13 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 540, -1, -1));
 
-        jLabel25.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\ganado.png")); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\ganado.png")); // NOI18N
         add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, -160, -1, -1));
 
-        jLabel24.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\perdido.png")); // NOI18N
+        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\perdido.png")); // NOI18N
         add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, -160, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\pausa.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\pausa.png")); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, -160, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Chakra Petch Light", 1, 18)); // NOI18N
@@ -241,7 +241,7 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel30.setText("<html><br>Bienvenido a Pandemic, intenta salvar al mundo.");
         add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 0, 380, -1));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\consola.png")); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\consola.png")); // NOI18N
         add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 10, 500, -1));
 
         jLabel23.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
@@ -252,8 +252,8 @@ public class PanelJugar extends javax.swing.JPanel {
 
         jLabel22.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel22.setText("Error, no tienes suficientes acciones");
-        add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 680, -1, -1));
+        jLabel22.setText("Error, no tienes suficientes acciones o la vacuna esta investigada.");
+        add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 680, 950, -1));
 
         jLabel21.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 0, 0));
@@ -265,7 +265,7 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel20.setText("Pulsa un color para curar la ciudad");
         add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 580, -1, -1));
 
-        jButton21.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusazul.png")); // NOI18N
+        jButton21.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusazul.png")); // NOI18N
         jButton21.setBorder(null);
         jButton21.setContentAreaFilled(false);
         jButton21.addActionListener(new java.awt.event.ActionListener() {
@@ -275,7 +275,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 640, -1, -1));
 
-        jButton20.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusamarillo.png")); // NOI18N
+        jButton20.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusamarillo.png")); // NOI18N
         jButton20.setBorder(null);
         jButton20.setContentAreaFilled(false);
         jButton20.addActionListener(new java.awt.event.ActionListener() {
@@ -285,7 +285,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 640, -1, -1));
 
-        jButton19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusverde.png")); // NOI18N
+        jButton19.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusverde.png")); // NOI18N
         jButton19.setBorder(null);
         jButton19.setContentAreaFilled(false);
         jButton19.addActionListener(new java.awt.event.ActionListener() {
@@ -295,7 +295,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 640, -1, -1));
 
-        jButton18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusrojo.png")); // NOI18N
+        jButton18.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusrojo.png")); // NOI18N
         jButton18.setBorder(null);
         jButton18.setContentAreaFilled(false);
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -305,7 +305,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 640, -1, -1));
 
-        jButton17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\panel_accion.png")); // NOI18N
+        jButton17.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\panel_accion.png")); // NOI18N
         jButton17.setBorder(null);
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,7 +314,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, -1, -1));
 
-        jButton10.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\panel_economia.png")); // NOI18N
+        jButton10.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\panel_economia.png")); // NOI18N
         jButton10.setBorder(null);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -323,16 +323,16 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 670, -1, -1));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png")); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\aguja.png")); // NOI18N
         add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 560, -1, -1));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png")); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\aguja.png")); // NOI18N
         add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 560, -1, -1));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png")); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\aguja.png")); // NOI18N
         add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 560, -1, -1));
 
-        jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png")); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\aguja.png")); // NOI18N
         add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 560, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
@@ -340,7 +340,7 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel15.setText("Pulsa una ciudad para curar un punto de infección");
         add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 680, -1, -1));
 
-        jButton16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusamarillo.png")); // NOI18N
+        jButton16.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusamarillo.png")); // NOI18N
         jButton16.setBorder(null);
         jButton16.setContentAreaFilled(false);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -350,7 +350,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 640, -1, -1));
 
-        jButton15.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusazul.png")); // NOI18N
+        jButton15.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusazul.png")); // NOI18N
         jButton15.setBorder(null);
         jButton15.setContentAreaFilled(false);
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -360,7 +360,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 640, -1, -1));
 
-        jButton14.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusverde.png")); // NOI18N
+        jButton14.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusverde.png")); // NOI18N
         jButton14.setBorder(null);
         jButton14.setContentAreaFilled(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -370,7 +370,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 640, -1, -1));
 
-        jButton13.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_virusrojo.png")); // NOI18N
+        jButton13.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_virusrojo.png")); // NOI18N
         jButton13.setBorder(null);
         jButton13.setContentAreaFilled(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -405,19 +405,19 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel6.setText("10%");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 670, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\prog_azul.png")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\prog_azul.png")); // NOI18N
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\prog_amarillo.png")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\prog_amarillo.png")); // NOI18N
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 640, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\prog_verde.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\prog_verde.png")); // NOI18N
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 640, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\prog_rojo.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\prog_rojo.png")); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 640, -1, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_tienda.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_tienda.png")); // NOI18N
         jButton2.setBorder(null);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -434,7 +434,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 660, -1, -1));
 
-        jButton5.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_atras.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_atras.png")); // NOI18N
         jButton5.setBorder(null);
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -451,7 +451,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 670, -1, -1));
 
-        jButton6.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_menu.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_menu.png")); // NOI18N
         jButton6.setBorder(null);
         jButton6.setContentAreaFilled(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -461,7 +461,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_acciones.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_acciones.png")); // NOI18N
         jButton1.setBorder(null);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -478,7 +478,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 660, -1, -1));
 
-        jButton4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_siguienteRonda.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_siguienteRonda.png")); // NOI18N
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -496,7 +496,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 670, -1, -1));
 
-        jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_progresos.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\button_progresos.png")); // NOI18N
         jButton3.setBorder(null);
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -513,7 +513,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 660, -1, -1));
 
-        jButton9.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\panel_investigar.png")); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\panel_investigar.png")); // NOI18N
         jButton9.setBorder(null);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -522,7 +522,7 @@ public class PanelJugar extends javax.swing.JPanel {
         });
         add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, -1, -1));
 
-        jButton8.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\panel_curacion.png")); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\botones\\panel_curacion.png")); // NOI18N
         jButton8.setBorder(null);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -541,13 +541,13 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel2.setText("100");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 570, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\mapa.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\mapa.png")); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\marcohoripng.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\paneles\\marcohoripng.png")); // NOI18N
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 620, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\logoeth.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ruben\\Desktop\\Pandemic\\src\\main\\java\\Assets\\logoeth.png")); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 550, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -611,7 +611,6 @@ public class PanelJugar extends javax.swing.JPanel {
         jLabel22.setVisible(false);
         
         
-        
         jLabel23.setVisible(false);
         
         if(marcoAcciones) {
@@ -624,7 +623,6 @@ public class PanelJugar extends javax.swing.JPanel {
             jButton8.setVisible(false);
             jButton9.setVisible(false); 
     	}
-        if(marcoTienda) {
             marcoTienda = false;
             jButton1.setVisible(true);
             jButton2.setVisible(true);
@@ -633,16 +631,7 @@ public class PanelJugar extends javax.swing.JPanel {
             jButton5.setVisible(false); 
             jButton17.setVisible(false);
             jButton10.setVisible(false);
-    	}else{
-               marcoTienda = true;
-            jButton1.setVisible(true);
-            jButton2.setVisible(true);
-            jButton3.setVisible(true);
-            jButton4.setVisible(true);
-            jButton5.setVisible(false); 
-            jButton17.setVisible(false);
-            jButton10.setVisible(false);
-        }
+
         if(marcoProgreso) {
             marcoProgreso = false;
             jButton1.setVisible(true);
@@ -921,8 +910,8 @@ public class PanelJugar extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        if(marcoinvestigar) {
-            marcoinvestigar = false;
+        
+            marcocura = false;
             jLabel14.setVisible(false);
             jButton13.setVisible(false);
             jButton14.setVisible(false);
@@ -931,8 +920,7 @@ public class PanelJugar extends javax.swing.JPanel {
             
             jButton8.setVisible(true);
             jButton9.setVisible(true);
-            
-    	}
+    	
         
         if(Vacunas.investigarVacunaColor(1)){
             jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
@@ -940,15 +928,16 @@ public class PanelJugar extends javax.swing.JPanel {
             jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
             jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
         } else {
+            jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
             jLabel22.setVisible(true);
             jButton8.setVisible(false);
             jButton9.setVisible(false);
             
         }
-        jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
-        jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
-        jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
-        jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
@@ -971,16 +960,19 @@ public class PanelJugar extends javax.swing.JPanel {
             jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
             jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
         } else {
+            jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
             jLabel22.setVisible(true);
             jButton8.setVisible(false);
             jButton9.setVisible(false);
-            
-            
+ 
         }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-                if(marcoinvestigar) {
+        if(marcoinvestigar) {
             marcoinvestigar = false;
             jLabel14.setVisible(false);
             jButton13.setVisible(false);
@@ -999,6 +991,10 @@ public class PanelJugar extends javax.swing.JPanel {
             jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
             jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
         } else {
+            jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja.png"));
             jLabel22.setVisible(true);
             jButton8.setVisible(false);
             jButton9.setVisible(false);
@@ -1026,6 +1022,7 @@ public class PanelJugar extends javax.swing.JPanel {
             jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
             jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
         } else {
+            System.out.println("com.mycompany.pandemic.PanelJugar.jButton14ActionPerformed()");
             jLabel22.setVisible(true);
             jButton8.setVisible(false);
             jButton9.setVisible(false);
@@ -1175,7 +1172,7 @@ public class PanelJugar extends javax.swing.JPanel {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // Boton curar rojo
         jLabel15.setVisible(true);
-        
+        marcocura = false;
         jButton18.setVisible(false);
             jButton19.setVisible(false);
             jButton20.setVisible(false);
@@ -1189,7 +1186,7 @@ public class PanelJugar extends javax.swing.JPanel {
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // Boton curar verde
         jLabel15.setVisible(true);
-        
+        marcocura = false;
         jButton18.setVisible(false);
             jButton19.setVisible(false);
             jButton20.setVisible(false);
@@ -1203,7 +1200,7 @@ public class PanelJugar extends javax.swing.JPanel {
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // Boton curar amarillo
         jLabel15.setVisible(true);
-        
+        marcocura = false;
         jButton18.setVisible(false);
             jButton19.setVisible(false);
             jButton20.setVisible(false);
@@ -1217,7 +1214,7 @@ public class PanelJugar extends javax.swing.JPanel {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // Boton curar azul
         jLabel15.setVisible(true);
-        
+        marcocura = false;
         jButton18.setVisible(false);
             jButton19.setVisible(false);
             jButton20.setVisible(false);
