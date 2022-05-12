@@ -40,25 +40,11 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -69,112 +55,6 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
             }
         });
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel11.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 310, 310, -1));
-
-        jLabel12.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 310, 270, -1));
-
-        jLabel9.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Hueco libre");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 270, 290, -1));
-
-        jLabel10.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Hueco libre");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 270, 280, -1));
-
-        jLabel7.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Partida 2");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 230, 280, -1));
-
-        jLabel8.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Partida 3");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 230, 300, -1));
-
-        jButton7.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
-        jButton7.setBorder(null);
-        jButton7.setBorderPainted(false);
-        jButton7.setContentAreaFilled(false);
-        jButton7.setFocusPainted(false);
-        jButton7.setFocusable(false);
-        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton7MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton7MouseExited(evt);
-            }
-        });
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1570, 160, -1, -1));
-
-        jButton6.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.setFocusPainted(false);
-        jButton6.setFocusable(false);
-        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton6MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton6MouseExited(evt);
-            }
-        });
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 160, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Ronda Número: 5");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 270, -1));
-
-        jLabel1.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Creada el 16/11/2000 ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Partida 1");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 260, -1));
-
-        jButton5.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\x.png")); // NOI18N
-        jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.setFocusPainted(false);
-        jButton5.setFocusable(false);
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton5MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton5MouseExited(evt);
-            }
-        });
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 160, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png")); // NOI18N
         jButton1.setBorder(null);
@@ -194,26 +74,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 520, -1, -1));
-
-        jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png")); // NOI18N
-        jButton3.setBorder(null);
-        jButton3.setFocusPainted(false);
-        jButton3.setFocusable(false);
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton3MouseExited(evt);
-            }
-        });
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 520, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 320, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_cargarP.png")); // NOI18N
         jButton2.setBorder(null);
@@ -233,16 +94,12 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 460, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1267, 139, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 139, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panelDif.png")); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 139, -1, -1));
+        jLabel11.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\paneles\\panel_jugar.png")); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, 940, -1));
 
         jButton4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_atras.png")); // NOI18N
         jButton4.setBorder(null);
@@ -263,6 +120,11 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
             }
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Chakra Petch Light", 1, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\backgroundTmp.png")); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 1710, -1));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-210, 0, 1830, 890));
     }// </editor-fold>//GEN-END:initComponents
@@ -290,40 +152,9 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         jButton2.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_cargarP.png"));
     }//GEN-LAST:event_jButton2MouseExited
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
-            PanelJugar.partida = new Partida(0, 1);
-        } catch (IOException ex) {
-            Logger.getLogger(PanelNuevaPartida.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        PanelJugar.ciudades = Partida.ciudadList;
-
-        JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new PanelJugar());
-            marco.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jPanel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseEntered
         
     }//GEN-LAST:event_jPanel1MouseEntered
-
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png"));
-    }//GEN-LAST:event_jButton1MouseExited
-
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-       jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP2.png"));
-    }//GEN-LAST:event_jButton1MouseEntered
-
-    private void jButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseEntered
-       jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP2.png"));
-    }//GEN-LAST:event_jButton3MouseEntered
-
-    private void jButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseExited
-        jButton3.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png"));
-    }//GEN-LAST:event_jButton3MouseExited
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
 
@@ -333,21 +164,6 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
             marco.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        try {
-            PanelJugar.partida = new Partida(0, 2);
-        } catch (IOException ex) {
-            Logger.getLogger(PanelNuevaPartida.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        PanelJugar.ciudades = Partida.ciudadList;
-
-        JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new PanelJugar());
-            marco.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void jButton4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseEntered
         jButton4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_atras2.png"));
     }//GEN-LAST:event_jButton4MouseEntered
@@ -356,65 +172,36 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
         jButton4.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_atras.png"));
     }//GEN-LAST:event_jButton4MouseExited
 
-    private void jButton5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5MouseEntered
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try {
+            PanelJugar.partida = new Partida(0, 1);
+        } catch (IOException ex) {
+            Logger.getLogger(PanelNuevaPartida.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
-    private void jButton5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5MouseExited
+        PanelJugar.ciudades = Partida.ciudadList;
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // Boton X
-        
-        
-    }//GEN-LAST:event_jButton5ActionPerformed
+        JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
+        marco.remove(this);
+        marco.add(new PanelJugar());
+        marco.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6MouseEntered
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP.png"));
+    }//GEN-LAST:event_jButton1MouseExited
 
-    private void jButton6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6MouseExited
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7MouseEntered
-
-    private void jButton7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7MouseExited
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+        jButton1.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\botones\\button_nuevaP2.png"));
+    }//GEN-LAST:event_jButton1MouseEntered
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
