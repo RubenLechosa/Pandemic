@@ -260,7 +260,7 @@ public class MenuInicial extends javax.swing.JPanel implements ActionListener{
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
    			JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
 			marco.remove(this);
-			marco.add(new PanelDificultad());
+			marco.add(new PanelNuevaPartida());
 			marco.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 

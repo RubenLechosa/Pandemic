@@ -17,6 +17,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
@@ -907,6 +908,7 @@ public class PanelJugar extends javax.swing.JPanel {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         //Aqui va guardar
+        Bd.guardarPartida(partida.getDificultad(), Partida.idJugador);
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
@@ -941,7 +943,7 @@ public class PanelJugar extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-                if(marcoinvestigar) {
+        if(marcoinvestigar) {
             marcoinvestigar = false;
             jLabel14.setVisible(false);
             jButton13.setVisible(false);
@@ -1279,7 +1281,6 @@ public class PanelJugar extends javax.swing.JPanel {
 					}
 				}
 				
-				
 				jLabel1.removeAll();
 				jLabel1.setVisible(false);
 				
@@ -1350,6 +1351,29 @@ public class PanelJugar extends javax.swing.JPanel {
     }
     
     public void showCities(){
+        jLabel2.setText(Integer.toString(partida.tienda.getDinero()));
+        jLabel26.setText("Ronda numero: "+ Partida.turno.getNumTurno());
+        
+        System.out.println(partida.turno.getPuntosTotales());
+        if (partida.turno.getPuntosTotales() == 3) {
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            
+        } else if(partida.turno.getPuntosTotales() == 2) {
+            jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            
+        } else if(partida.turno.getPuntosTotales() == 1) {
+            jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            
+        } else if(partida.turno.getPuntosTotales() == 0) {
+            jLabel16.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            jLabel17.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            jLabel18.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+            jLabel19.setIcon(new javax.swing.ImageIcon("src\\main\\java\\Assets\\aguja2.png"));
+        }
+        
         jLabel1.setVisible(false); 
         jLabel1.removeAll();
                         for (Ciudad ciudad : ciudades) {

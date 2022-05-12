@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.swing.JLabel;
 import com.mycompany.pandemic.Modelo.Turno;
 import com.mycompany.pandemic.Controlador.Partida;
+import java.math.BigDecimal;
 
 public class Tienda extends Turno {
     
@@ -15,6 +16,12 @@ public class Tienda extends Turno {
 		this.dinero = 100;
 		this.dineroPorTurno = 5;
 	}
+        
+        public Tienda(BigDecimal dinero2, BigDecimal dineroPorTurno2) {
+            this.dinero = dinero2.intValue();
+            this.dineroPorTurno = dineroPorTurno2.intValue();
+	}
+        
 
 	public void setDinero(int dinero) {
 		this.dinero = dinero;
@@ -73,8 +80,6 @@ public class Tienda extends Turno {
 			System.out.println("No tienes suficiente dinero para comprar esto.");
 		}
 
-	}
-	
-	
+	}	
 	
 }

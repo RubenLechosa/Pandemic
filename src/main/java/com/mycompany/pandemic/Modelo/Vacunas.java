@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.mycompany.pandemic.Controlador.Partida;
+import java.math.BigDecimal;
 
 public class Vacunas {
 
@@ -20,6 +21,19 @@ public class Vacunas {
 		this.colorVacuna = colorVacuna;
 
 	}
+        
+        public Vacunas(BigDecimal porcentajeVacuna2, BigDecimal vacunaInvestigada2, String colorVacuna2) {
+            this.porcentajeVacuna = porcentajeVacuna2.intValue();
+    	
+            if(vacunaInvestigada2.intValue() == 0) {
+                    this.vacunaInvestigada = false;
+            } else {
+                    this.vacunaInvestigada = true;
+            }
+
+            this.colorVacuna = colorVacuna2;
+	}
+
 
 	public static void crearVacunas() throws IOException {
 		HashMap<Integer, HashMap<String, String>> listEnfermedades = new HashMap<Integer, HashMap<String, String>>();

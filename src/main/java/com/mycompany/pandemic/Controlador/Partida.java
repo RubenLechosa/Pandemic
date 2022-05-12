@@ -12,9 +12,10 @@ import com.mycompany.pandemic.Modelo.Turno;
 import com.mycompany.pandemic.Modelo.Vacunas;
 
 public class Partida {
-    private int idJugador;
+    public static int idJugador;
+    public static int partidaId;
     private int enfermedadesActivas;
-    private int dificultad;
+    public static int dificultad;
     private boolean resultado;
     
     // Variables para dificultad
@@ -35,7 +36,6 @@ public class Partida {
     public static ArrayList<String> console_log = new ArrayList<String>();
     
     public Partida(int idJugador, int dificultad) throws IOException{
-        this.idJugador = idJugador;
         this.enfermedadesActivas = 0;
         this.resultado = false;
         this.dificultad = dificultad;
@@ -52,7 +52,14 @@ public class Partida {
         turno.primerTurno();
         Vacunas.crearVacunas();
         
-    }	
+    }
+    
+        public Partida(int idJugador) throws IOException{
+        this.enfermedadesActivas = 0;
+        this.resultado = false;
+
+        this.leerParametrosDificultad();
+    }
 
     //Metodos
     public void guardarPartida(){
@@ -67,13 +74,14 @@ public class Partida {
         if(turno.getBrotesTotales() > getBrotesActivosDerrota()){
             System.out.println("El jugador ha perdido porque ha superado los "+getBrotesActivosDerrota()+" brotes totales.");
             this.setPuntos(this.getPuntos()+5);
+            Bd.borrarPartidas(idJugador);
             return true;
         }
         
         for (Integer colorActivo : turno.contarColoresActivos().values()) {
 			if(colorActivo >= getEnfermedadesActivas()) {
 				System.out.println("El jugador ha perdido porque ha superado los colores de enfermedades.");
-                                //this.setPuntos(this.getPuntos()+5);
+                                Bd.borrarPartidas(idJugador);
                                 return true;
 			}
 		}

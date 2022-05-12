@@ -12,6 +12,7 @@ import java.util.Map;
 import javax.swing.JLabel;
 
 import com.mycompany.pandemic.Controlador.Partida;
+import java.math.BigDecimal;
 
 public class Turno extends JLabel {
 	private int numTurno = 1;
@@ -31,6 +32,15 @@ public class Turno extends JLabel {
                 this.ciudadesInfectadasTurno = new ArrayList<String>();
 		
 	}
+        
+        public Turno(BigDecimal numturno2, BigDecimal brotestotales2, BigDecimal acciones) {
+		this.numTurno = numturno2.intValue();
+		this.brotesTotales = brotestotales2.intValue();
+                this.puntosTotales = acciones.intValue();
+                this.ciudadesInfectadas = new ArrayList<Integer>();
+                this.ciudadesInfectadasTurno = new ArrayList<String>();
+	}
+
 
 	// Metodos
 	public void primerTurno() {
@@ -61,7 +71,9 @@ public class Turno extends JLabel {
 		
 		if(this.getNumTurno() != 1) {
 			for (int i = numero; i > 0; i--) {
-				System.out.println(ciudadesInfectadasTurno.remove(i));
+                            if(ciudadesInfectadas.size() >= i){
+                                System.out.println(ciudadesInfectadasTurno.remove(i));
+                            }
 			}
 		}
 		
@@ -69,6 +81,7 @@ public class Turno extends JLabel {
 	
 	public void infectarCiudadesTurno() {
 		todasciudades = Partida.getCiudades();
+                System.out.println(todasciudades);
 		int numero = 0;
 		Random aleatorio = new Random();
                 

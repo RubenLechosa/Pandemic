@@ -6,6 +6,7 @@ import java.util.HashMap;
 
 import com.mycompany.pandemic.Controlador.Partida;
 import com.mycompany.pandemic.Modelo.Enfermedad;
+import java.math.BigDecimal;
 
 public class Ciudad {
     private int idCiudad;
@@ -14,7 +15,7 @@ public class Ciudad {
     private int coordenadaX;
     private int coordenadaY;
     private ArrayList<String> ciudadesColindantes = new ArrayList<String>();
-    private ArrayList<Enfermedad> enfermedadList;
+    private ArrayList<Enfermedad> enfermedadList = new ArrayList<Enfermedad>();;
     
     public Ciudad(String nombre, int colorCiudad, int coordenadaX, int coordenadaY, ArrayList<String> ciudadesColindantes){
         this.enfermedadList = new ArrayList<Enfermedad>();
@@ -31,6 +32,29 @@ public class Ciudad {
 			e.printStackTrace();
 		}
     }
+    
+    public Ciudad(BigDecimal idCiudad2, String nombreCiudad, BigDecimal colorCiudad, BigDecimal coordenadaX, BigDecimal coordenadaY,
+        BigDecimal nInfeccionAzul, BigDecimal nInfeccionRojo, BigDecimal nInfeccionVerde,
+        BigDecimal nInfeccionAmarillo) {
+    	
+        this.nombre = nombreCiudad;
+    	this.colorCiudad = colorCiudad.intValue();
+    	this.coordenadaX = coordenadaX.intValue();
+    	this.coordenadaY = coordenadaY.intValue();
+        
+        try {
+            cargarEnfermedades();
+	} catch (IOException e) {
+            e.printStackTrace();
+	}
+        
+        this.getEnfermedadList().get(0).setNivelInfeccion(nInfeccionAzul.intValue());
+	this.getEnfermedadList().get(1).setNivelInfeccion(nInfeccionRojo.intValue());
+	this.getEnfermedadList().get(2).setNivelInfeccion(nInfeccionVerde.intValue());
+	this.getEnfermedadList().get(3).setNivelInfeccion(nInfeccionAmarillo.intValue());
+		
+    }
+
     
     public void cargarEnfermedades() throws IOException {
     	HashMap<Integer, HashMap<String, String>> listEnfermedades = new HashMap<Integer, HashMap<String, String>>();

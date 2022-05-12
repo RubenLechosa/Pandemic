@@ -4,6 +4,7 @@
  */
 package com.mycompany.pandemic;
 
+import com.mycompany.pandemic.Controlador.Bd;
 import com.mycompany.pandemic.Controlador.Partida;
 import com.mycompany.pandemic.Modelo.Ciudad;
 import com.mycompany.pandemic.Modelo.Enfermedad;
@@ -131,17 +132,22 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
-            PanelJugar.partida = new Partida(0, 0);
+            PanelJugar.partida = new Partida(Partida.idJugador);
+            if(Bd.cargarPartida(Partida.idJugador)){
+                PanelJugar.ciudades = Partida.ciudadList;
+        
+                JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
+                    marco.remove(this);
+                    marco.add(new PanelJugar());
+                    marco.setVisible(true);
+            } else {
+                
+            }
         } catch (IOException ex) {
             Logger.getLogger(PanelNuevaPartida.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        PanelJugar.ciudades = Partida.ciudadList;
 
-        JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
-            marco.remove(this);
-            marco.add(new PanelJugar());
-            marco.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
@@ -173,17 +179,10 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
     }//GEN-LAST:event_jButton4MouseExited
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
-            PanelJugar.partida = new Partida(0, 1);
-        } catch (IOException ex) {
-            Logger.getLogger(PanelNuevaPartida.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        PanelJugar.ciudades = Partida.ciudadList;
-
+        // Nueva partida
         JFrame marco = (JFrame)SwingUtilities.getWindowAncestor(this);
         marco.remove(this);
-        marco.add(new PanelJugar());
+        marco.add(new PanelDificultad());
         marco.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
