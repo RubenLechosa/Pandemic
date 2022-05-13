@@ -106,7 +106,9 @@ public class Partida {
                     }else{
                         this.setPuntos(this.getPuntos()+40);
                     }
-			return true;
+                    
+                    Bd.sumarPuntos(idJugador, this.getPuntos());
+                    return true;
 		}
 		
         return false;
