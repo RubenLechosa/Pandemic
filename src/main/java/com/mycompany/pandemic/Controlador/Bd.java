@@ -385,6 +385,31 @@ public static Connection makeConnection() {
                 
                 return false;
 	}
+        
+        public static boolean tienePartidas(int user_id) {
+                System.out.println(user_id);
+		Connection con = makeConnection();
+		String SQL = "SELECT p.* FROM Partida p WHERE p.user_id = "+user_id+"";
+
+		Statement st = null;
+
+		try {
+			st = con.createStatement();
+
+			ResultSet rs = st.executeQuery(SQL);
+		
+			while (rs.next()) {
+                                return true;
+			}
+
+			st.close();
+
+		} catch (SQLException e) {
+                       return false; 
+		}
+                
+                return false;
+	}
 
 
 }

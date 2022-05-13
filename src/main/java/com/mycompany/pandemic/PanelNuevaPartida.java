@@ -29,6 +29,12 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
      */
     public PanelNuevaPartida() {
         initComponents();
+        
+        if(Bd.tienePartidas(Partida.idJugador)){
+            jButton2.setVisible(true);
+        } else {
+            jButton2.setVisible(false);
+        }
     }
 
     /**
@@ -133,6 +139,7 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
             PanelJugar.partida = new Partida(Partida.idJugador);
+            
             if(Bd.cargarPartida(Partida.idJugador)){
                 PanelJugar.ciudades = Partida.ciudadList;
         
@@ -140,14 +147,10 @@ public class PanelNuevaPartida extends javax.swing.JPanel implements ActionListe
                     marco.remove(this);
                     marco.add(new PanelJugar());
                     marco.setVisible(true);
-            } else {
-                
             }
         } catch (IOException ex) {
             Logger.getLogger(PanelNuevaPartida.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
