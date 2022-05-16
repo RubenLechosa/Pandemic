@@ -610,7 +610,7 @@ public class PanelJugar extends javax.swing.JPanel {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         jLabel21.setVisible(false);
         jLabel22.setVisible(false);
-        
+        jLabel15.setVisible(false);
         
         jLabel23.setVisible(false);
         

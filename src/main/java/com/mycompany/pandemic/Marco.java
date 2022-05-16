@@ -7,11 +7,12 @@ package com.mycompany.pandemic;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class Marco extends javax.swing.JFrame {
 
-    PanelDificultad lamina1;
+    Login lamina1;
 
     public Marco() {
         
@@ -21,7 +22,7 @@ public class Marco extends javax.swing.JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // fin del programa al pulsar la X
         setTitle("PANDEMIC");
 
-        lamina1 = new PanelDificultad();
+        lamina1 = new Login();
 
         add(lamina1);
         setVisible(true);
@@ -40,6 +41,14 @@ public class Marco extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 1920, 1080));
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+            public void windowIconified(java.awt.event.WindowEvent evt) {
+                formWindowIconified(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -65,6 +74,19 @@ public class Marco extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        
+        ImageIcon icon = new ImageIcon("src\\main\\java\\Assets\\dificil.png");
+   setIconImage(icon.getImage());
+        System.out.println("Hoa");
+    }//GEN-LAST:event_formWindowActivated
+
+    private void formWindowIconified(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowIconified
+        ImageIcon icon = new ImageIcon("src\\main\\java\\Assets\\dificil.png");
+        setIconImage(icon.getImage());
+        System.out.println("Hoa");
+    }//GEN-LAST:event_formWindowIconified
 
     /**
      * @param args the command line arguments

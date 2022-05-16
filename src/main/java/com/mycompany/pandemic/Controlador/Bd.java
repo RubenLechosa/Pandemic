@@ -196,7 +196,6 @@ public static Connection makeConnection() {
 		    st.close();
 		} catch (SQLException e) {
 			System.out.println("The SELECT had problems!! " + e);
-			
 		}	
                     System.out.println(ranking);
 		return ranking;
