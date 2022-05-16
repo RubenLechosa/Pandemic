@@ -14,7 +14,7 @@ public class Bd {
 
 	private static final String USER = "PND_PRIVEE";
 	private static final String PWD = "AREL123";
-	private static final String URL = "jdbc:oracle:thin:@oracle.ilerna.com:1521:xe";
+	private static final String URL = "jdbc:oracle:thin:@192.168.3.26:1521:xe";
 	
 	 
 	private static Scanner smenu = new Scanner(System.in);
