@@ -302,7 +302,6 @@ public static Connection makeConnection() {
         }
 		
 	public static boolean cargarPartida(int user_id) {
-                System.out.println(user_id);
 		Connection con = makeConnection();
 		String SQL = "SELECT p.* FROM Partida p WHERE p.user_id = "+user_id+"";
 
