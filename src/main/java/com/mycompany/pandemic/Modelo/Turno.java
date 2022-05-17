@@ -49,13 +49,14 @@ public class Turno extends JLabel {
 		
 		for (int j = 0; j < Partida.ciudadesInfectadasInicio; j++) {
 			do {
+                           
 				numero = aleatorio.nextInt(todasciudades.size());
 			}while(ciudadesInfectadasTurno.contains(todasciudades.get(numero).getNombreCiudad()));
 		
 			ArrayList<Enfermedad> enfermedadesCiudad = todasciudades.get(numero).getEnfermedadList();
 			enfermedadesCiudad.get(todasciudades.get(numero).getColorCiudad()).setNivelInfeccion(1);
 
-			System.out.println(todasciudades.get(numero).getNombreCiudad());
+			//System.out.println(todasciudades.get(numero).getNombreCiudad());
 			ciudadesInfectadasTurno.add(todasciudades.get(numero).getNombreCiudad());
 		}
 	}
@@ -71,7 +72,7 @@ public class Turno extends JLabel {
 		
 		if(this.getNumTurno() != 1) {
 			for (int i = numero; i > 0; i--) {
-                            if(ciudadesInfectadas.size() >= i){
+                            if(ciudadesInfectadasTurno.size() >= i){
                                 System.out.println(ciudadesInfectadasTurno.remove(i));
                             }
 			}
@@ -81,7 +82,6 @@ public class Turno extends JLabel {
 	
 	public void infectarCiudadesTurno() {
 		todasciudades = Partida.getCiudades();
-                System.out.println(todasciudades);
 		int numero = 0;
 		Random aleatorio = new Random();
                 
