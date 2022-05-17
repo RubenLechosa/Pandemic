@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.FileWriter;
+import java.net.URL;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.*;
 import javax.xml.transform.*;
@@ -61,7 +62,7 @@ public abstract class Archivos {
 		return textoFinal;
     }
     
-    public static ArrayList<String> readXML(String xml) {
+    public static ArrayList<String> readXML(int dificultad) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         ArrayList<String> rolev = new ArrayList<String>();
       try {
@@ -73,25 +74,24 @@ public abstract class Archivos {
           // parse XML file
           DocumentBuilder db = dbf.newDocumentBuilder();
 
-          Document doc = db.parse(new File(xml));
+          Document doc = db.parse(new InputSource(new URL("http://localhost/dificultad" + dificultad).openStream()));
 
           doc.getDocumentElement().normalize();
 
 
           // get <staff>
           NodeList list = doc.getElementsByTagName("parametros");
-
+          
           for (int temp = 0; temp < list.getLength(); temp++) {
 
               Node node = list.item(temp);
-
               if (node.getNodeType() == Node.ELEMENT_NODE) {
 
                   Element element = (Element) node;
 
                   // get staff's attribute
                   String id = element.getAttribute("id");
-
+                  
                   // get text
                   rolev.add(element.getElementsByTagName("numCiudadesInfectadasInicio").item(0).getTextContent());
                   rolev.add(element.getElementsByTagName("numCuidadesInfectadasRonda").item(0).getTextContent());

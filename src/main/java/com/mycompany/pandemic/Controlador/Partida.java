@@ -143,7 +143,7 @@ public class Partida {
     }
     
     public void leerParametrosDificultad() {
-    	ArrayList<String> parametros = Archivos.readXML("src\\main\\java\\Assets\\ArchivosDificultad\\parametros"+dificultad+".xml");
+    	ArrayList<String> parametros = Archivos.readXML(dificultad);
     	ciudadesInfectadasInicio = Integer.parseInt(parametros.get(0));
     	cuidadesInfectadasRonda = Integer.parseInt(parametros.get(1));
     	enfermedadesActivasDerrota = Integer.parseInt(parametros.get(2));
